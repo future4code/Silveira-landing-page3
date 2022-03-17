@@ -1,0 +1,83 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+#body-inicial{
+    display: grid;
+    grid-template-rows: 80px 1fr 80px;
+}
+
+/*HEADER*/
+#cabecalho{ /*header*/
+    display: flex;
+    grid-column: 1/-1;
+    justify-content: space-between;
+    background-color: aqua;
+    background-image: linear-gradient(135deg, #fdfcfb 0%, #e2d1c3 100%);
+    align-items: center;
+}
+#menu-1{/*div-menu*/
+    display: flex;
+    margin-left: 15px;
+    align-items: center;
+    
+}
+
+#menu-1 > a{/*links Entregador e Nossos Produtos*/
+    margin-right: 10px;
+    text-decoration: none;
+}
+
+#logo{ /*logo*/
+    margin-left: 15px;
+    width: 45px;
+    height: 50px; 
+}
+
+header > button{ /*botão*/
+    background-color: #b66b32;
+    margin: 20px 40px;
+    width: 70px;
+}
+header > button:hover{ /*botão*/
+    background-color: #cc8e5f;
+}
+/*MAIN*/
+main{
+    height: 100vh;
+    }
+
+/*FOOTER*/
+footer{
+
+    padding-left: 60px;
+    padding-right: 60px;
+}
+#nav-1 {
+    border-top: 1px solid burlywood;
+    display: flex;
+    justify-content: center;
+    margin-top: 5px;
+}
+
+#nav-2{
+    display: flex;
+    justify-content: center;
+    margin-top: 5px;
+}
+.logo-footer{
+    width: 20px;
+    margin: 3px;
+}
+
+#nav-3{
+    display:flex;
+    justify-content: center;
+    margin-top: 5px;
+}
+
+#nav-4{
+    display: flex;
+    justify-content: center;
+    margin-top: 5px;
+}

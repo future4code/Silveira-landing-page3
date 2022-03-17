@@ -1,0 +1,53 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{    
+    display: grid;
+    min-height: 100vh;     
+    grid-template-rows: 80px 1fr 80px;  
+         
+}
+
+header{
+    display:flex;
+    justify-content:space-between;
+    grid-column: 1/-1; 
+    background-image: linear-gradient(135deg, #fdfcfb 0%, #e2d1c3 100%);
+ }
+#logo{
+    width: 45px;
+    margin-left: 15px;
+    height:50px;
+}
+footer{
+    background-image: linear-gradient(135deg, #fdfcfb 0%, #e2d1c3 100%);
+}
+.links > a{
+    margin:10px;
+    text-decoration: none;
+
+}
+.links{
+    display: flex;
+    margin-left: 15px;
+    align-items: center;
+}
+header > button{
+    margin: 20px 40px;
+    width: 70px;
+
+}
+#moto,#bike{
+    width: 70px;
+    
+}
+.displayfotos{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding:30px;
+    margin-left: 70px;
+    margin-right: 70px;
+}

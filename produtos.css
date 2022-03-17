@@ -1,0 +1,79 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    display: grid;
+    min-height: 100vh;
+    grid-template-rows: 60px 1fr 80px;
+}
+
+header{
+background-image: linear-gradient(135deg, #fdfcfb 0%, #e2d1c3 100%);
+display: flex;
+justify-content: space-between;
+grid-column: 1/-1;
+}
+
+header img{
+    margin-left: 15px;
+    width: 45px;
+    height: 50px;
+}
+
+header div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 30px;
+    
+}
+ header a{
+     margin: 10px;
+     text-decoration: none;
+ }
+
+header button{
+    margin: 20px 40px;
+    width: 70px;
+    background-color: ghostwhite;
+}
+
+header button:hover{
+    background-color: rgb(161, 159, 159);
+}
+
+footer{
+    padding-left: 60px ;
+    padding-right: 60px ;
+    
+} 
+
+footer div{
+    border-top: 1px solid gray;
+    
+}
+
+.rede-social{
+    display: flex;
+    flex-direction: center;
+    justify-content: center;
+}
+
+footer nav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 5px;
+}
+
+footer p{
+    display: flex;
+    justify-content: center;
+ }
+
+footer img{
+    width: 25px;
+    margin: 3px;
+
+}

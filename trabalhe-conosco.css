@@ -6,8 +6,8 @@
 body{    
     display: grid;
     min-height: 100vh;     
-    grid-template-rows: 80px 1fr 80px;  
-         
+    grid-template-rows: 80px 1fr auto;  
+
 }
 
 header{
@@ -23,6 +23,7 @@ header{
 }
 footer{
     background-image: linear-gradient(135deg, #fdfcfb 0%, #e2d1c3 100%);
+    
 }
 .links > a{
     margin:10px;
@@ -39,15 +40,80 @@ header > button{
     width: 70px;
 
 }
-#moto,#bike{
-    width: 70px;
+#displayfotos{
+    display: flex;
+    justify-content: center;
+}
+#moto{
+    
+    width: 85px;
+    padding-left: 80px;
     
 }
-.displayfotos{
+
+#bike{
+    width: 85px;
+    padding-right: 80px;
+
+}
+   
+
+.displayFotos{
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     padding:30px;
     margin-left: 70px;
     margin-right: 70px;
+} 
+.textoEntregador{
+    font-size: 45px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    
+}
+
+.footerAppDicas{
+    display: flex;
+    justify-content:space-around;
+}
+.App{
+    display: flex;
+    margin-left:-90px;
+    
+}
+.Dicas{
+    display : flex;
+    
+}
+.portalEntregador{
+    display: flex;
+    
+}
+.Pai{
+    display: flex;
+    justify-content:space-around;
+
+}
+.links1 a{
+    text-decoration: none;
+color:black;
+}
+
+.links2  a{
+    text-decoration: none;
+    color:black;
+}
+.links2  a:hover{
+    background-color: rgb(255, 0, 0);
+    color:white;
+    transition-duration: 1s; 
+    
+}
+.links1  a:hover{
+    background-color: rgb(255, 0, 0);
+    color:white;
+    transition-duration: 1s; 
+    
 }

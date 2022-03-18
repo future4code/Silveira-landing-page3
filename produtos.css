@@ -43,6 +43,60 @@ header button:hover{
     background-color: rgb(161, 159, 159);
 }
 
+main{
+    margin: 30px;
+
+}
+
+main nav{
+    display: flex;
+}
+
+main nav img{
+    width: 50px;
+}
+
+main nav h2{
+    display: flex;
+    align-items: center;
+    
+}
+
+main h3{
+    margin-top: 20px;
+    background-color: rgb(243, 231, 231);
+    border: solid 100px;
+    border-top: 100px;
+    border-bottom: 10px;
+    border-left: 10px;
+    border-right: 10px;
+    border-radius: 15px;
+}
+ .card-principal{
+     display:grid;
+     grid-template-columns: repeat(5, 1fr);
+     row-gap: 10px;
+     column-gap: 10px;
+ }
+
+ .card-produto{
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 2px 2px 5px 2px darkgray;
+    margin: 10px;
+}
+
+.card-produto h4{
+    margin-top: 10px;
+}
+
+.card-produto img{
+    width: 70%;
+    border: 1px solid beige;
+}
+
 footer{
     padding-left: 60px ;
     padding-right: 60px ;
@@ -75,5 +129,22 @@ footer p{
 footer img{
     width: 25px;
     margin: 3px;
+}
 
+@media screen and (min-device-width : 320px) and (max-device-width : 480px) {
+    .card-principal{
+     display: flex;
+     flex-wrap: wrap;
+ }
+ header{
+     display: flex;
+     justify-content: flex-start;
+     margin: 0px;
+ }
+ header img{
+    margin-right: 10px;
+}
+header div{
+    margin: 0px;
+}
 }

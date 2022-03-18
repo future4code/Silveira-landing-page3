@@ -6,7 +6,8 @@
     display: grid;
     grid-template-rows: 80px 1fr 100px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    background-color: #f5f0ec;;
+    background-color: #f5f0ec;
+    min-height:100vh;
 }
 
 /*HEADER*/
@@ -83,7 +84,7 @@ main{
     margin-top: 10px;
 }
 #div-busca input{
-    width: 600px;
+    width: 500px;
     height: 30px;
     border-style:hidden;
     margin-bottom: 15px;
@@ -100,17 +101,22 @@ main{
     grid-row: 2;
     grid-column: 1;
     background-color: #f5f0ec;
-    display: flex;
+    /* display: flex; */
     padding-top: 20px;
+    /* width: 40%; */
 }
-
+#div-restaurante{
+    grid-row: 2;
+    grid-column: 2;
+    background-color: #f5f0ec;
+}
 #div-restaurante p{
     grid-column: 2;
     font-size: 30px;
     text-align: center;
     background-color: #f5f0ec;
     padding-top: 15%;
-    padding-right: 15%;
+    /* padding-right: 15%; */
 }
 
 #div-restaurante button{
@@ -129,14 +135,13 @@ main{
 }
 .slider {
     display: flex;
-    height: 293px;
-    width: 300px;
+    height: 200px;
+    width: 200px;
     /* margin: auto; */
     padding: 1%;
     /* margin-top: 20px; */
     position: relative;
-    left: 50%;
-    
+    /* left: 100%; */
     /* justify-content: center; */
 }
 
@@ -146,9 +151,9 @@ main{
 }
 
 .slider img {
-    margin: auto;
-    height: 293px;
-    width: 300px;
+    /* margin: auto; */
+    height: 204px;
+    width: 204px;
     border-radius: 5px;
 }
 
@@ -192,36 +197,37 @@ main{
     z-index: 10;
 }
 
-#container-3{
+#div-foto-mercado{
     background-color: #f5f0ec;
     grid-row: 3;
     grid-column: 1;
     padding: 5px;
 }
 
-#container-3 img{
-    height: 293px;
-    width: 450px;
+#div-foto-mercado img{
+    height: 150px;
+    width: 250px;
     border-radius: 5px;
     display: flex;
-    padding-left: 15%;
+    align-items: center;
 }
 
-#container-4{
+#mercados{
     grid-row: 3;
     grid-column: 2;
     background-color: #f5f0ec;
+    /* width: 40%; */
 }
-#container-4 p{
+#mercados p{
     grid-column: 2;
     font-size: 30px;
     text-align: center;
     background-color: #f5f0ec;
     padding-top: 5%;
-    padding-right: 15%;
+    /* width: 20%; */
 }
 
-#container-4 button{
+#mercados button{
     background-color: #3b2d23;
     margin: 20px 40px;
     width: 70px;
@@ -231,30 +237,32 @@ main{
     color: #e2d1c3;
     margin-left: 40%;
 }
-#container-4 button:hover{
+#mercados button:hover{
     background-color: #cc8e5f;
     cursor: pointer;
 }
 
-#container-5{
+#cadastro-moto-boy{
     grid-row: 4;
-    grid-column: 1;
+    grid-column:1;
     background-color: #f5f0ec;
+    /* width: 40%; */
 }
 
-#container-5 img{
+#cadastro-moto-boy img{
     height: 93px;
     width: 100px;
     border-radius: 5px;
     display: flex;
     padding-left: 40%;
+    /* padding-left: 40%; */
 }
-#container-5 p{
+#cadastro-moto-boy p{
     font-size: 15px;
     text-align: center;
 }
 
-#container-5 button{
+#cadastro-moto-boy button{
     background-color: #3b2d23;
     margin: 20px 40px;
     width: 70px;
@@ -264,30 +272,31 @@ main{
     color: #e2d1c3;
     margin-left: 45%;
 }
-#container-5 button:hover{
+#cadastro-moto-boy:hover{
     background-color: #cc8e5f;
     cursor: pointer;
 }
 
-#container-6{
+#cadastro-restaurante{
     grid-row: 4;
     grid-column: 2;
     background-color: #f5f0ec;
+    /* width: 40%; */
 }
 
-#container-6 img{
+#cadastro-restaurante img{
     height: 93px;
     width: 100px;
     border-radius: 5px;
     display: flex;
     padding-left: 40%;
 }
-#container-6 p{
+#cadastro-restaurante p{
     font-size: 15px;
     text-align: center;
 }
 
-#container-6 button{
+#cadastro-restaurante button{
     background-color: #3b2d23;
     margin: 20px 40px;
     width: 70px;
@@ -297,7 +306,7 @@ main{
     color: #e2d1c3;
     margin-left: 40%;
 }
-#container-6 button:hover{
+#cadastro-restaurante:hover{
     background-color: #cc8e5f;
     cursor: pointer;
 }
@@ -335,4 +344,59 @@ footer{
     display: flex;
     justify-content: center;
     margin-top: 5px;
+}
+@media screen and (min-device-width : 320px) and (max-device-width : 480px) {
+main{
+    display: flex;
+    flex-wrap: wrap;
+}
+main img{
+    margin: 5px;
+}
+header{
+    display: flex;
+    justify-content: flex-start;
+    margin: 0px;
+}
+#cadastro-moto-boy{
+    margin-left: 21%;
+}
+header img{
+   margin-right: 10px;
+}
+header div{
+   margin: 0px;
+}
+#div-busca input{
+    width: 300px;
+    margin: 20px;
+    }
+    #div-foto-mercado{
+        margin-left: 20%;
+    }
+    #div-foto-mercado p{
+        font-size: 20px;
+    margin-left: 10px;
+    }
+    #div-restaurante{
+        margin-left: 13%;
+    }
+    #div-restaurante p{
+    font-size: 20px;
+    margin-left: 10px;
+    }
+    #cadastro-restaurante{
+        width: 300px;
+        margin-left: 13%;
+    }
+    #mercados{
+        margin-left: 13%;
+    }
+    #mercados p{
+        font-size: 20px;
+    margin-left: 10px;
+    }
+    #container-2{
+        margin-left: 30%;
+    }
 }

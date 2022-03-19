@@ -14,6 +14,6 @@ imagens do projeto:
 
 ## 🤝 Colaboradores
 
-Mari Mendes
-Davi Araujo
-luiz vinicius
+Mari Mendes,
+Davi Araujo,
+luiz vinicius,

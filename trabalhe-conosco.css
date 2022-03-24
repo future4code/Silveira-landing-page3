@@ -1,0 +1,173 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/* cabecalho */
+
+header{
+    display:flex;
+    justify-content:space-between;
+    grid-column: 1/-1; 
+    background-image: linear-gradient(135deg, #fdfcfb 0%, #e2d1c3 100%);
+}
+
+header > button{
+    margin: 20px 40px;
+    width: 70px;
+
+}
+
+#logo{
+    width: 45px;
+    margin-left: 15px;
+    height:50px;
+}
+
+/* corpo */
+
+body{    
+    display: grid;
+    min-height: 100vh;     
+    grid-template-rows: 80px 1fr auto;  
+}
+
+#displayfotos{
+    display: flex;
+    justify-content: center;
+}
+#moto{
+    
+    width: 85px;
+    padding-left: 80px;
+    
+}
+
+#bike{
+    width: 85px;
+    padding-right: 80px;
+
+}
+.tiozinho{
+    display: flex;
+justify-content: center;
+
+}
+.tiozinhoDaEntrega{
+    border: 8px solid;
+    border-radius: 15px;
+}
+
+
+.textoFinal{
+    text-align: center;
+    font-size: 45px ;
+    margin:20px;
+}
+ 
+
+/* roda-pe */
+footer{
+    background-image: linear-gradient(135deg, #fdfcfb 0%, #e2d1c3 100%);
+    
+}
+
+.links > a{
+    margin:10px;
+    text-decoration: none;
+
+}
+
+.links{
+    display: flex;
+    margin-left: 15px;
+    align-items: center;
+}
+
+.displayFotos{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding:30px;
+    margin-left: 70px;
+    margin-right: 70px;
+} 
+.textoEntregador{
+    font-size: 45px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    
+}
+
+.footerAppDicas{
+    display: flex;
+    justify-content:space-around;
+}
+.App{
+    display: flex;
+    margin-left:-90px;
+    
+}
+.Dicas{
+    display : flex;
+    
+}
+.portalEntregador{
+    display: flex;
+    
+}
+.Pai{
+    display: flex;
+    justify-content:space-around;
+
+}
+.links1 a{
+    text-decoration: none;
+color:black;
+}
+
+.links2  a{
+    text-decoration: none;
+    color:black;
+}
+.links2  a:hover{
+    background-color: rgb(255, 0, 0);
+    color:white;
+    transition-duration: 1s; 
+    
+}
+.links1  a:hover{
+    background-color: rgb(255, 0, 0);
+    color:white;
+    transition-duration: 1s; 
+    
+}
+#div-1 {
+    border-top: 1px solid burlywood;
+    display: flex;
+    justify-content: center;
+    margin-top: 5px;
+}
+
+#div-2{
+    display: flex;
+    justify-content: center;
+    margin-top: 5px;
+}
+.logo-footer{
+    width: 20px;
+    margin: 3px;
+}
+
+#div-3{
+    display:flex;
+    justify-content: center;
+    margin-top: 5px;
+}
+
+#div-4{
+    display: flex;
+    justify-content: center;
+    margin-top: 5px;
+}

@@ -1,0 +1,402 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+#body-inicial{
+    display: grid;
+    grid-template-rows: 80px 1fr 100px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-color: #f5f0ec;
+    min-height:100vh;
+}
+
+/*HEADER*/
+
+#cabecalho{ /*header*/
+    display: flex;
+    grid-column: 1/-1;
+    justify-content: space-between;
+    background-color: aqua;
+    background-image: linear-gradient(135deg, #fdfcfb 0%, #e2d1c3 100%);
+    align-items: center;
+}
+#menu-1{/*div-menu*/
+    display: flex;
+    margin-left: 15px;
+    align-items: center;
+    
+}
+
+#menu-1 > a{/*links Entregador e Nossos Produtos*/
+    margin-right: 10px;
+    text-decoration: none;
+    color: #3b2d23;
+}
+
+#logo{ /*logo*/
+    margin-left: 15px;
+    width: 45px;
+    height: 50px; 
+}
+
+header > button{ /*botão*/
+    background-color: #3b2d23;
+    margin: 20px 40px;
+    width: 70px;
+    height: 40px;
+    border-style:groove ;
+    border-radius: 10px;
+    color: #e2d1c3;
+}
+header > button:hover{ /*botão*/
+    background-color: #cc8e5f;
+    cursor: pointer;
+}
+
+/*MAIN*/
+
+main{
+    height: 100%;
+    display: grid;
+    grid-template-rows: 160px 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    row-gap: 20px;
+    }
+#container-1{
+    grid-row: 1;
+    grid-column: 1/-1;
+    background-color: #f5f0ec;
+}
+
+.texto-slogan{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+}
+.texto-slogan > p{
+    color: gray;
+}
+
+#div-busca{
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+#div-busca input{
+    width: 500px;
+    height: 30px;
+    border-style:hidden;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    padding: 2px;
+}
+
+#div-busca img{
+    width: 15px;
+    margin-left: 5px;
+}
+
+#container-2{
+    grid-row: 2;
+    grid-column: 1;
+    background-color: #f5f0ec;
+    /* display: flex; */
+    padding-top: 20px;
+    /* width: 40%; */
+}
+#div-restaurante{
+    grid-row: 2;
+    grid-column: 2;
+    background-color: #f5f0ec;
+}
+#div-restaurante p{
+    grid-column: 2;
+    font-size: 30px;
+    text-align: center;
+    background-color: #f5f0ec;
+    padding-top: 15%;
+    /* padding-right: 15%; */
+}
+
+#div-restaurante button{
+    background-color: #3b2d23;
+    margin: 20px 40px;
+    width: 70px;
+    height: 40px;
+    border-style:groove ;
+    border-radius: 10px;
+    color: #e2d1c3;
+    margin-left: 40%;
+}
+#div-restaurante button:hover{
+    background-color: #cc8e5f;
+    cursor: pointer;
+}
+.slider {
+    display: flex;
+    height: 200px;
+    width: 200px;
+    /* margin: auto; */
+    padding: 1%;
+    /* margin-top: 20px; */
+    position: relative;
+    /* left: 100%; */
+    /* justify-content: center; */
+}
+
+.slider li {
+    list-style: none;
+    position: absolute;
+}
+
+.slider img {
+    /* margin: auto; */
+    height: 204px;
+    width: 204px;
+    border-radius: 5px;
+}
+
+.slider input {
+    display: none;
+}
+
+.slider label {
+    background-color: darkgray;
+    bottom: 10px;
+    cursor: pointer;
+    display: block;
+    height: 10px;
+    position: absolute;
+    width: 10px;
+    z-index: 10;
+}
+
+.slider li:nth-child(1) label {
+    left: 10px;
+}
+
+.slider li:nth-child(2) label {
+    left: 40px;
+    bottom: 10px;
+}
+
+.slider li:nth-child(3) label {
+    left: 70px;
+    bottom: 10px;
+}
+
+.slider img {
+    opacity: 0;
+    visibility: hidden;
+}
+
+.slider li input:checked ~ img {
+    opacity: 1;
+    visibility: visible;
+    z-index: 10;
+}
+
+#div-foto-mercado{
+    background-color: #f5f0ec;
+    grid-row: 3;
+    grid-column: 1;
+    padding: 5px;
+}
+
+#div-foto-mercado img{
+    height: 150px;
+    width: 250px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+}
+
+#mercados{
+    grid-row: 3;
+    grid-column: 2;
+    background-color: #f5f0ec;
+    /* width: 40%; */
+}
+#mercados p{
+    grid-column: 2;
+    font-size: 30px;
+    text-align: center;
+    background-color: #f5f0ec;
+    padding-top: 5%;
+    /* width: 20%; */
+}
+
+#mercados button{
+    background-color: #3b2d23;
+    margin: 20px 40px;
+    width: 70px;
+    height: 40px;
+    border-style:groove ;
+    border-radius: 10px;
+    color: #e2d1c3;
+    margin-left: 40%;
+}
+#mercados button:hover{
+    background-color: #cc8e5f;
+    cursor: pointer;
+}
+
+#cadastro-moto-boy{
+    grid-row: 4;
+    grid-column:1;
+    background-color: #f5f0ec;
+    /* width: 40%; */
+}
+
+#cadastro-moto-boy img{
+    height: 93px;
+    width: 100px;
+    border-radius: 5px;
+    display: flex;
+    padding-left: 40%;
+    /* padding-left: 40%; */
+}
+#cadastro-moto-boy p{
+    font-size: 15px;
+    text-align: center;
+}
+
+#cadastro-moto-boy button{
+    background-color: #3b2d23;
+    margin: 20px 40px;
+    width: 70px;
+    height: 40px;
+    border-style:groove ;
+    border-radius: 10px;
+    color: #e2d1c3;
+    margin-left: 45%;
+}
+#cadastro-moto-boy:hover{
+    background-color: #cc8e5f;
+    cursor: pointer;
+}
+
+#cadastro-restaurante{
+    grid-row: 4;
+    grid-column: 2;
+    background-color: #f5f0ec;
+    /* width: 40%; */
+}
+
+#cadastro-restaurante img{
+    height: 93px;
+    width: 100px;
+    border-radius: 5px;
+    display: flex;
+    padding-left: 40%;
+}
+#cadastro-restaurante p{
+    font-size: 15px;
+    text-align: center;
+}
+
+#cadastro-restaurante button{
+    background-color: #3b2d23;
+    margin: 20px 40px;
+    width: 70px;
+    height: 40px;
+    border-style:groove ;
+    border-radius: 10px;
+    color: #e2d1c3;
+    margin-left: 40%;
+}
+#cadastro-restaurante:hover{
+    background-color: #cc8e5f;
+    cursor: pointer;
+}
+/*FOOTER*/
+footer{
+    padding-left: 60px;
+    padding-right: 60px;
+    background-color: #f5f0ec;
+}
+
+#nav-1 {
+    border-top: 1px solid burlywood;
+    display: flex;
+    justify-content: center;
+    margin-top: 5px;
+}
+
+#nav-2{
+    display: flex;
+    justify-content: center;
+    margin-top: 5px;
+}
+.logo-footer{
+    width: 20px;
+    margin: 3px;
+}
+
+#nav-3{
+    display:flex;
+    justify-content: center;
+    margin-top: 5px;
+}
+
+#nav-4{
+    display: flex;
+    justify-content: center;
+    margin-top: 5px;
+}
+@media screen and (min-device-width : 320px) and (max-device-width : 480px) {
+main{
+    display: flex;
+    flex-wrap: wrap;
+}
+main img{
+    margin: 5px;
+}
+header{
+    display: flex;
+    justify-content: flex-start;
+    margin: 0px;
+}
+#cadastro-moto-boy{
+    margin-left: 21%;
+}
+header img{
+   margin-right: 10px;
+}
+header div{
+   margin: 0px;
+}
+#div-busca input{
+    width: 300px;
+    margin: 20px;
+    }
+    #div-foto-mercado{
+        margin-left: 20%;
+    }
+    #div-foto-mercado p{
+        font-size: 20px;
+    margin-left: 10px;
+    }
+    #div-restaurante{
+        margin-left: 13%;
+    }
+    #div-restaurante p{
+    font-size: 20px;
+    margin-left: 10px;
+    }
+    #cadastro-restaurante{
+        width: 300px;
+        margin-left: 13%;
+    }
+    #mercados{
+        margin-left: 13%;
+    }
+    #mercados p{
+        font-size: 20px;
+    margin-left: 10px;
+    }
+    #container-2{
+        margin-left: 30%;
+    }
+}
